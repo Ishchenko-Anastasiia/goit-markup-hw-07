@@ -17,7 +17,7 @@
     --little:0.02em;
 }
 
-ul[class] {
+ul{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -45,7 +45,7 @@ select {
     cursor: pointer;
 }
 .container{
-    width: 1128px;
+    width: 1158px;
     padding: 0 10px;
     margin: 0 auto;
 
@@ -221,9 +221,6 @@ button:hover{
 .team_card{
     background-color: var(--white);
     max-width: 264px;
-    display: flex;
-    flex-direction: column;
-
 }
 .team_card:not(:last-child){
 margin-right: 24px;
@@ -234,6 +231,8 @@ margin-right: 24px;
 }
 .team_title{
     margin-bottom: 72px;
+}.team_name{
+    margin-bottom: 8px;
 }
 .team_position{
     line-height: 1.5;
@@ -251,6 +250,7 @@ margin-right: 24px;
 .footer_logo{
     color: var(--blue-400);
     margin-bottom: 16px;
+    margin-right: 0;
 }   
 .footer_tagline{
     margin-top: 16px;
@@ -266,17 +266,15 @@ margin-right: 24px;
 .gallery_list{
     display: flex;
     justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
     
 }
-.gallery_item{
-    margin-bottom: 72px; 
-    /* знаю що сюди не вірно писати відсткупи,
-    але чомусь у родительський класс якщо додаю не працює */
-}
-.gallery_item:not(:last-child){
+
+/* .gallery_item:not(:last-child){
     margin-right: 24px;
     
-}
+} */
 .gallery_btn{
     font-weight: var(--medium-500);
     line-height: 1.5;
@@ -286,18 +284,22 @@ margin-right: 24px;
     border-radius: 4px;
     padding: 12px 24px;
 }
+.gallery_btn:hover,
+.gallery_btn:focus{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 .portfolio_list{
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap:48px 24px;
 }
 .portfolio_item{
-margin-bottom: 48px;
 max-width: 360px;
 }
 .portfolio_info{
 border: 1px solid var(--blue-500);
 padding: 32px 16px;   
+border-top: none;
 }
 .portfolio_services{
     font-size: 20px;
