@@ -170,6 +170,7 @@ button:hover{
     text-align: center;
 }
 .hero_btn{
+    max-width: 169px;
     border: none;
     color:var(--white);
     background-color: var(--blue-600);  
