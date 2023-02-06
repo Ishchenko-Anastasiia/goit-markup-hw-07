@@ -46,7 +46,7 @@ select {
 }
 .container{
     width: 1158px;
-    padding: 0 10px;
+    padding: 0 15px;
     margin: 0 auto;
 
 }
@@ -167,6 +167,7 @@ button:hover{
     line-height: 1.1;  
     color: var(--white);
     margin-bottom: 48px;
+    text-align: center;
 }
 .hero_btn{
     border: none;
@@ -221,6 +222,8 @@ button:hover{
 .team_card{
     background-color: var(--white);
     max-width: 264px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 .team_card:not(:last-child){
 margin-right: 24px;
@@ -257,10 +260,9 @@ margin-right: 24px;
     color: var(--blue-500);  
 }
 /*_______________________ PORTFOLIO */
-.header_portfolio{
-  margin-bottom: 96px;  
-}
+
 .gallery{
+    padding-top: 96px;
     padding-bottom: 120px;
 }
 .gallery_list{
@@ -271,10 +273,6 @@ margin-right: 24px;
     
 }
 
-/* .gallery_item:not(:last-child){
-    margin-right: 24px;
-    
-} */
 .gallery_btn{
     font-weight: var(--medium-500);
     line-height: 1.5;
@@ -307,6 +305,7 @@ border-top: none;
     line-height: 1.2;
     letter-spacing: var(--little);
     color: var(--grey-700);
+    margin-bottom: 8px;
 }
 .portfollio_specialit{
     font-weight: var(--regular-400);
