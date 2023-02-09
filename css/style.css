@@ -242,13 +242,14 @@ button:hover{
 .team_card{
     background-color: var(--white);
     max-width: 264px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
 }
 .team_card:not(:last-child){
 margin-right: 24px;
 }
 .team_card:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
 }
 .team_info{
     padding: 32px 16px;
@@ -411,6 +412,9 @@ width: 168px;
 }
 .portfolio_item{
 max-width: 360px;
+}
+.portfolio_item:hover{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .portfolio_info{
 border: 1px solid var(--blue-500);
