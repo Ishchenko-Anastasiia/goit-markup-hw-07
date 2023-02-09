@@ -160,6 +160,8 @@ button:hover{
     background-position: center;
     background-size: cover;
     padding: 188px 0;
+    max-width: 1140px;
+    margin:0 auto;
 }
 .hero_info{
     max-width: 494px;
@@ -207,6 +209,15 @@ button:hover{
     letter-spacing: var(--little);
     color: var(--grey-600);  
 }
+.skils_img{
+    width: 100%;
+    height: 112px;
+    background-color: var(--blue-400);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
 
 /*_______________________ ABOUT */
 .about{
@@ -231,8 +242,6 @@ button:hover{
 .team_card{
     background-color: var(--white);
     max-width: 264px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
 }
 .team_card:not(:last-child){
 margin-right: 24px;
@@ -260,8 +269,7 @@ margin-right: 24px;
     background-color: var(--blue-700);
 }
 .team_soc_link,
-.social_link,
-.customer_link{
+.social_link{
     width: 100%;
     height: 100%;
     display: flex;
@@ -280,9 +288,9 @@ margin-right: 24px;
     color: var(--grey-600);  
     margin-bottom: 8px;
 }
-/*_______________________ CUSTOMERS */
+/*_______________________ customerS */
 
-.customers{
+.customer{
     padding: 120px 0;
 }
 .customer_title{
@@ -301,17 +309,27 @@ margin-right: 24px;
     gap: 24px;
 }
 .customer_item{
-    width: 168px;
+width: 168px;
     height: 80px;
+}
+.customer_link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #8E8F99;
     border-radius: 4px;
+    color:#8E8F99;
+}
+.customer_icon {
+    fill: currentColor;
 }
 .customer_link:is(:hover,:focus){
-  border:1px solid var(--blue-700);
+    border-color: var(--blue-700);
+    color: var(--blue-700);
 }
-.customer_link:is(:hover, :focus).customer_icon {
-    fill: var(--blue-700);
-}
+
 /*_______________________ FOOTER */
 .footer{
     background-color: var(--grey-700);
