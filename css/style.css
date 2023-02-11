@@ -160,7 +160,8 @@ button:hover{
     background-position: center;
     background-size: cover;
     padding: 188px 0;
-    width: 100%;
+    max-width: 1440px;
+    height: 600px;
     margin:0 auto;
 }
 .hero_info{
@@ -309,7 +310,7 @@ margin-right: 24px;
 }
 .customer_item{
 width: 168px;
-    height: 80px;
+    height: 88px;
 }
 .customer_link{
     width: 100%;
@@ -409,17 +410,20 @@ width: 168px;
 .portfolio_item{
 max-width: 360px;
 }
-.portfolio_item:hover{
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
+
 .portfolio_link{
 letter-spacing: var(--little);
     color: var(--grey-600); 
+    text-decoration: none;
 } 
+.portfolio_item:is(:hover,:focus) {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 .portfolio_info{
 border: 1px solid var(--blue-500);
 padding: 32px 16px;   
 border-top: none;
+
 }
 .portfolio_services{
     font-size: 20px;
