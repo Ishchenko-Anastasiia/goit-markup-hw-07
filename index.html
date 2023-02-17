@@ -23,7 +23,7 @@
             <span class="logo_pre">web</span> Studio </a>
         <ul class="menu_list">
           <li class="menu_item">
-            <a class="menu_link" href="./index.html">Studio</a>
+            <a class="menu_link menu_link_active" href="./index.html">Studio</a>
           </li>
           <li class="menu_item">
             <a class="menu_link" href="./portfolio.html">Portfolio</a>
@@ -53,7 +53,7 @@
           <h1 class="hero_text">
             Effective Solutions for Your Business
         </h1>
-        <button class="hero_btn" type="button">Order Service</button>
+        <button class="hero_btn" type="button"data-modal-open>Order Service</button>
         </div>
       </section>
       <section class="skils">
@@ -388,5 +388,15 @@
         </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal_btn" type="button" data-modal-close>
+             <svg class="modal_icon" width="8" height="8">
+                    <use href="./images/icon/icons.svg#icon-vector"></use>
+              </svg>
+          </button>
+        </div>
+    </div>
+     <script src="./js/modal.js"></script>
   </body>
 </html>
