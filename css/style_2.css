@@ -711,31 +711,12 @@ border-top: none;
 
 
 /* @media screen and (min-width: 480px){
-    .skils_list{
-        flex-direction: column;
-        width: 100%;
-    }
-    .skils_item:not(:last-child) {
-        margin-right: 0;
-    }
     
-    .skils_item {
-        max-width: 100%;
-    }
-    .skils_img{
-        display: none;
-    }
-    .skils_title{
-        text-align: center;
-        font-size: 36px;
-        line-height: 1.1;
-    }
-   
-} */
+}
 @media screen and (min-width: 768px){
     
 }
 
 @media screen and (min-width: 1200px){
     
-}
+} */
