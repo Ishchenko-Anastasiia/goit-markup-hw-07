@@ -4,23 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>WebStudio</title>
   <body> 
     <header class="header">
       <div class="container">
         <div class="header_top">
-      <nav class="header_navigation">
-        <a class="logo_top logo" href="./index.html">
+          <a class="logo_top logo" href="./index.html">
             <span class="logo_pre">web</span>Studio </a>
+          <nav class="header_navigation">
+      
         <ul class="menu_list">
           <li class="menu_item">
             <a class="menu_link menu_link_active" href="./index.html">Studio</a>
@@ -32,8 +28,8 @@
             <a class="menu_link" href="">Contacts</a>
           </li>
         </ul>
-      </nav>
-      <address class="header_contact">
+         </nav>
+         <address class="header_contact">
         <ul class="contact_list">
           <li class="contact_item">
             <a class="link contact_link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -42,9 +38,79 @@
             <a class="link contact_link" href="tel:+110001111111"> +11 (000) 111-11-11</a>
           </li>
         </ul>
-      </address>
-        </div>
+         </address>
+         <button class="mobile_btn-open" data-menu-open type="button">
+            <span class="menu_line"></span>
+          </button>
+      </div>
     </div>    
+    <div class="mobile_menu is-hidden" data-menu>
+      <button class="mobile_btn-close modal_btn" data-menu-close type="button">
+        <svg class="modal_icon" width="8" height="8">
+          <use href="./images/icon/icons.svg#icon-vector"></use>
+      </svg>
+      </button>
+      <div class="mobile_container">
+        <div class="mobile_wrap_top">
+          <nav class="mobile_navigation">
+           <ul class="mobile_list">
+          <li class="mobile_item">
+            <a class="mobile_link mobile_link_active" href="./index.html">Studio</a>
+          </li>
+          <li class="mobile_item">
+            <a class="mobile_link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mobile_item">
+            <a class="mobile_link" href="">Contacts</a>
+          </li>
+           </ul>
+         </nav>
+        </div>
+         <div class="mobile_wrap_bottom">
+         <address class="mobile_contact">
+        <ul class="mobiles_list">
+          <li class="mobiles_item">
+            <a class="link mobiles_link mobiles_link-tel" href="tel:+110001111111"> +11 (000) 111-11-11</a>
+          </li>
+          <li class="mobiles_item">
+            <a class="link mobiles_link mobiles_link-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+         </address>
+         <ul class="mob_soc_list">
+          <li class="mob_soc_item">
+            <a href="" class="team_soc_link">
+              <svg class="mob_icon" width="16" height="16">
+                <use href="./images/icon/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob_soc_item">
+            <a href="" class="mob_soc_link">
+              <svg class="mob_icon" width="16" height="16">
+               <use href="./images/icon/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob_soc_item">
+            <a href="" class="mob_soc_link">
+               <svg class="mob_icon" width="16" height="16">
+                <use href="./images/icon/icons.svg#icon-facebook"></use>
+              </svg>           
+            </a>
+          </li>
+          <li class="mob_soc_item">
+            <a href="" class="mob_soc_link">
+               <svg class="mob_icon" width="16" height="16">
+                  <use href="./images/icon/icons.svg#icon-linkedin"></use>
+              </svg>              
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+
     </header>
     <main>
       <section class="hero">
@@ -119,7 +185,7 @@
         </h2>
         <ul class="about_gallery">
             <li class="about_item">
-                <img class="about_img" src="./images/img_1.jpg" srcset='./images/img_1-2x.jpg 1x, ./images/img_12x.jpg 2x' alt="computer" width="360" />
+                <img class="about_img" src="./images/img_1.jpg" srcset='./images/img_1-2x.jpg 1x, ./images/img_1-2x.jpg 2x' alt="computer" width="360" />
             </li>
             <li class="about_item">
                 <img class="about_img" src="./images/img_2.jpg" srcset='./images/img_2-2x.jpg 1x, ./images/img_2-2x.jpg 2x' alt="computer" width="360" />
@@ -463,6 +529,7 @@
         </form>
         </div>
     </div>
+    <script src="./js/menu.js"></script>
      <script src="./js/modal.js"></script>
   </body>
 </html>
