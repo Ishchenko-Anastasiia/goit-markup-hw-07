@@ -164,7 +164,7 @@ body {
 }
 .mobiles_link-tel{
     font-weight: var(--bolt-700);
-    font-size: 36px;
+    font-size: 21px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -197,7 +197,7 @@ body {
 .mob_soc_list{
     display: flex;
     justify-content: space-between;
-    gap: 56px;
+    gap: 18px;
 }
 .social_link{
     width: 100%;
@@ -242,6 +242,8 @@ body {
 .header_navigation{
     display: none;
 }
+
+
 
 /*_______________________ HERO */
 .hero{
@@ -461,6 +463,7 @@ margin-bottom: 72px;
     display: flex;
    flex-direction: column;
    align-items: center;
+   padding-left: 0;
    
 }
 .footer_info{
@@ -660,7 +663,7 @@ border-top: none;
 }
 
 .modal{
-    width: 392px;
+    width: 310px;
     min-height: 586px;
     background-color: var(--blue-300);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -767,7 +770,7 @@ border-top: none;
 
 .modal_text{
     font-weight: var(--regular-400);
-    font-size: 12px;
+    font-size: 9px;
     line-height: 1.1;
     letter-spacing: 0.04em;
     color: var(--grey-550);
@@ -813,13 +816,12 @@ border-top: none;
 }
 
 .modal_submit{
-    width: 169px;
-    height: 56px;
+    width: 150px;
+    height: 46px;
     display: block;
     margin: 0 auto;
     padding: 16px 32px;
 }
-
 
 @media screen and (min-width: 480px){
     .container{
@@ -833,6 +835,24 @@ border-top: none;
     }
     .footer_subscribe{
         width: 398px;
+    }
+    .mobiles_link-tel{
+        font-size: 36px;
+    }
+    .mob_soc_list {
+        display: flex;
+        justify-content: space-between;
+        gap: 56px;
+    }
+    .modal{
+        width: 392px;
+    }
+    .modal_text{
+        font-size: 12px;
+    }
+    .modal_submit{
+        width: 169px;
+        height: 56px;
     }
 }
 @media screen and (min-width: 768px){
@@ -883,6 +903,7 @@ border-top: none;
     .contact_link:hover {
         color: var(--blue-700);
     }
+    
     .menu_link.menu_link_active::after{
         content: " ";
         position: relative;
@@ -894,6 +915,7 @@ border-top: none;
         border-radius: 2px;
         z-index: 1;
     }
+    
     .hero{
         background-image: linear-gradient(var(--l_gra)),
              url(../images/bg_tablet.jpg);
@@ -944,7 +966,7 @@ border-top: none;
         margin-bottom: 0;
     }
     .footer{
-        padding-left: 108px;
+        padding-left: 0;
     }
     .footer_info{
         margin-right: 24px;
@@ -1039,11 +1061,9 @@ border-top: none;
     .about{
         display: block;
     }
-    .team{
-        padding: 120px 0;  
-    }
+    .team,
     .customer{
-        padding: 120px 0;
+        padding: 120px 0;  
     }
     .customer_list{
         justify-content: space-between;
@@ -1088,3 +1108,4 @@ border-top: none;
 
     
 }
+
