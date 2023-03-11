@@ -100,39 +100,15 @@ body {
 }
 .header_top{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 35px 0;
     position: relative;
-    height: 70px;
 }
-.mobile_btn-open,
-.mobile_btn-open::before,
-.mobile_btn-open::after{
-    display: block;
-    position: absolute;
-    width: 32px;
-    height: 3px;
+.mobile_btn-open{
     border: none;
-    border-radius: 2px;
-    background-color: var(--grey-700);
-    right: 0;
+    background-color: transparent;
 }
-.mobile_btn-open::before {
-    content: '';
-    top: -8px;
-    right:0;
-    
-  }
-  .mobile_btn-open::after {
-    content: '';
-    top: 8px;
-    right:0;
-    
-  }
-.mobile_btn-open:hover,
-.mobile_btn-open::before:hover,
-.mobile_btn-open::after:hover {
+.mobile_btn-open:hover {
     background-color: var(--blue-700);
   }
 
@@ -221,7 +197,7 @@ body {
     line-height: 1.33;
     text-transform: uppercase;
     text-decoration: none;
-    margin-right: 75px;
+
 
 }
 
@@ -232,8 +208,6 @@ body {
 
 .logo_top {
     color: var(--grey-700);
-    position: absolute;
-    left: 0;
 }
 .contact_list{
     display: flex;
@@ -882,12 +856,14 @@ border-top: none;
 }
 
 @media screen and (min-width: 768px){
+
     .container{
         width: 768px;
     }
-    .logo_top {
-        position: relative;
-    }
+    .logo_top,
+    .menu_list{
+        margin-right: 120px;
+      }
     .contact_list{
         display: flex;
         gap: 40px;
@@ -902,6 +878,9 @@ border-top: none;
         display: flex;
         align-items: center;
         
+    }
+    .header_top{
+        padding: 25px 0;
     }
     .menu_list{
         display: flex;
@@ -936,7 +915,7 @@ border-top: none;
         display: block;
         width: 100%;
         height: 4px;
-        bottom: -23px;
+        bottom: -36px;
         background:var(--blue-700);
         border-radius: 2px;
         z-index: 1;
@@ -1064,9 +1043,15 @@ border-top: none;
       url(../images/bg_desktop2x.jpg);
     }
   }
+  .logo_top{
+    margin-right: 75px;
+  }
   .header_top{
     justify-content: unset;
   }
+  .menu_link.menu_link_active::after{
+       bottom: -26px;
+}
     .header_contact{
         margin-left: auto;
     }
@@ -1090,9 +1075,6 @@ border-top: none;
     }
     .skils_item{
         width: 264px;
-    }
-    .skils_item:not(:last-child){
-        margin-right: 24px;
     }
     .skils_img{
         display: flex;
